@@ -1,0 +1,55 @@
+body{
+    background-image: url("bg.jpg");
+    text-align:center;    
+    justify-content:center;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+h1{
+    color:white;
+    text-align:center;
+    font-size: 100px;
+}
+table{
+    color:white;
+    border:white;
+    padding: 10px;
+    background-color: lightgrey;
+}
+td{
+    width:30%;
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    font-family: arial;
+    font-size: 12px;
+    font-color: grey;
+}
+input {
+    font-family: arial;
+    font-size: 14px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+::placeholder {
+    color: darkgray;
+}
+
+button {
+    color: black;
+    background: lightgrey;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    height: 29px;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+button:hover {
+    color: white;
+}

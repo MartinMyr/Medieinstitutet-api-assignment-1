@@ -1,0 +1,29 @@
+doctype html
+html
+ div(class='add')
+  form(method="post" action="/add")
+   input(type="text" name="foods" placeholder="Enter food" id="food")
+   input(type="text" name="score" placeholder="Enter score" id="score")
+   button( id="add" type="submit") Lägg till
+
+ br
+
+ div(class='update')
+  form(method="post" action="/update")
+   input(type="text" name="updateFoods" placeholder="Enter food" id="update-food")
+   input(type="text" name="updateScore" placeholder="Enter score" id="update-score")
+   input(type="text" hidden name="updateId" placeholder="Enter score" id="update-id")
+   button( id="update" type="submit") Uppdatera
+
+ br
+ br
+ br
+
+
+div(class='div-class' )
+ form(method="post" action="/delete")
+   input(type="text" name="delete" id="delete-input")
+   button( id="delete-btn" type="submit") Bekräfta
+
+
+

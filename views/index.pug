@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        link(rel='stylesheet', href='style.css', type='text/css')
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        title Api
+body
+    h1 FOOD
+    include get_form
+    br
+    br 
+    table(style='width:100%', border='1')
+        tr
+            td="Id:"
+            td="Namn:"
+            td="Poäng:"
+        each val in foods
+            tr
+                td= val.id
+                td=val.name
+                td=val.points
+                td
+                    button(class='delete' data=val.id type='submit') Ta bort
+                td
+                    button(class='change' data-id=val.id data-name=val.name data-score=val.points type='submit') Ändra
+
+script
+     include ../script/script.js
